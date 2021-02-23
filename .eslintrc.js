@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  noInlineConfig: false,
   env: {
     node: true
   },

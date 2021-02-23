@@ -3,8 +3,14 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import axios from "axios";
+import VueAxios from "vue-axios";
+import API from "@/service/api";
 
 Vue.config.productionTip = false;
+
+Vue.use(VueAxios, axios);
+Vue.use(API, null);
 
 new Vue({
   router,
