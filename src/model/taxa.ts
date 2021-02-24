@@ -1,1 +1,3 @@
-export class Taxa {[Key: string]: number}
+export class Taxa {
+  [Key: string]: number;
+}

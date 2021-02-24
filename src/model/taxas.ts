@@ -1,7 +1,9 @@
-import { Taxa } from ".";
+import { Taxa, TaxaEm, BaseTaxa } from ".";
 
-export class Taxas {
-  rates: Taxa;
+export class Taxas<T extends BaseTaxa> {
+  rates: T;
   base: string;
-  date: Date;
+  date?: Date;
+  start_at?: Date;
+  end_at?: Date;
 }
