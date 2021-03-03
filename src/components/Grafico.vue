@@ -45,8 +45,6 @@ function prepareGraph(nVal: Array<{ data: Date, rate: Taxa }>, context: Grafico)
   data.datasets = [];
   data.datasets.lenght = Object.keys(dataSet[0].rate).length;
 
-  console.log(data.datasets.lenght);
-
   if (data.datasets.lenght > 1) {
     context.$store.commit("setMode", GraficoMode.MULTI_SYMBOL);
   } else if (context.$store.state.mode !== GraficoMode.SINGLE_SYMBOL) {
@@ -135,7 +133,7 @@ function prepareGraph(nVal: Array<{ data: Date, rate: Taxa }>, context: Grafico)
       elements: {
         point: {
           radius: 0,
-          hitRadius: 4
+          hitRadius: 8
         }
       },
       legend: {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <q-layout class="q-pa-md q-gutter-y-sm">
+    <q-layout class="">
       <q-header elevated class="bg-purple">
         <q-toolbar class="text-white">
           <q-btn flat round dense icon="menu" @click="acaoBtnMenu" />
@@ -38,7 +38,7 @@
       </q-drawer>
 
       <q-page-container>
-        <q-page padding>
+        <q-page class="q-mt-xl">
           <router-view />
         </q-page>
       </q-page-container>
