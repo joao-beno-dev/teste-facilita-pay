@@ -1,5 +1,9 @@
 # teste-facilita-pay
 
+---
+
+Versão inicial, recebe os dados de cambio do banco central europeu, plota o gráfico, e permite a conversão entre três simbolos.
+
 ## Project setup
 ```
 yarn install
